@@ -1,0 +1,46 @@
+{
+  "artifact_path": ".",
+  "files_sha256": {
+    "vocab.json": "765201840c5e06a7f06997ad319c68bc1dc942fb437a7424312f805120f1f164",
+    "merges.txt": "95394fffe9a1858f4e6eee6bf186967b4931ac68ff82c9118f6e69ecbb6666ab",
+    "tokenizer_config.json": "d14e4b758c0adb419c250bc40446562d9e3e15eccb824f9eba50fde36bcfc9b2"
+  },
+  "training_run_sha256": "6580ee178f4e00f3924f0d0cc9c01a2724d2b7d939914f3c76eec1a8b9f883fe",
+  "training_manifest_sha256": "2632092a527b418780cbaea88c79afe9cc3cc4e4236c82f3af008440bdb25afc",
+  "training_seconds": 1529.4743751999995,
+  "training_records": 16837,
+  "trainer_sha256": "e08deb6b884489d70389017e4a344e14a196c8286ea0df8970fc5495c89c55b0",
+  "special_tokens": {
+    "<|assistant|>": 260,
+    "<|end_final|>": 267,
+    "<|end_think|>": 269,
+    "<|end_tool_call|>": 263,
+    "<|end_tool_result|>": 265,
+    "<|end_turn|>": 261,
+    "<|end_verify|>": 271,
+    "<|endoftext|>": 256,
+    "<|final|>": 266,
+    "<|pad|>": 257,
+    "<|system|>": 258,
+    "<|think|>": 268,
+    "<|tool_call|>": 262,
+    "<|tool_result|>": 264,
+    "<|user|>": 259,
+    "<|verify|>": 270
+  },
+  "learned_tokens": 31728,
+  "stage_merges": {
+    "Code": 12691,
+    "English": 15864,
+    "Math": 3173
+  },
+  "all_slots_filled": true,
+  "numeric_merge_integrity_passed": true,
+  "special_token_checks_passed": true,
+  "roundtrip_fixtures_passed": 58,
+  "export_path": ".",
+  "actual_vocab_size": 32000,
+  "byte_tokens": 256,
+  "special_token_count": 16,
+  "export_reload_passed": true
+}

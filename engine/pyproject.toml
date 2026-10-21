@@ -1,0 +1,22 @@
+[build-system]
+requires = ["pybind11>=2.10", "setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bloat-tokenizer"
+version = "0.3.0"
+description = "Fast C++ BPE tokenizer and dataset token-counting CLI"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache 2.0"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: C++",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+bloat-tokenizer = "curriculum_tokenizer.cli:main"

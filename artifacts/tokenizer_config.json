@@ -1,0 +1,111 @@
+{
+  "added_vocab_size": 0,
+  "base_vocab_size": 32000,
+  "code_ratio": 0.4,
+  "english_ratio": 0.5,
+  "eos_token": "<|endoftext|>",
+  "format_version": 2,
+  "learned_token_start": 272,
+  "math_ratio": 0.1,
+  "merge_scoring": "compression_diversity_v1",
+  "merges_count": 31728,
+  "pad_token": "<|pad|>",
+  "pre_tokenizer": "special_boundaries_whitespace_prefix_v2",
+  "requested_vocab_size": 32000,
+  "special_token_count": 16,
+  "special_token_ids": {
+    "<|assistant|>": 260,
+    "<|end_final|>": 267,
+    "<|end_think|>": 269,
+    "<|end_tool_call|>": 263,
+    "<|end_tool_result|>": 265,
+    "<|end_turn|>": 261,
+    "<|end_verify|>": 271,
+    "<|endoftext|>": 256,
+    "<|final|>": 266,
+    "<|pad|>": 257,
+    "<|system|>": 258,
+    "<|think|>": 268,
+    "<|tool_call|>": 262,
+    "<|tool_result|>": 264,
+    "<|user|>": 259,
+    "<|verify|>": 270
+  },
+  "special_tokens": [
+    "<|endoftext|>",
+    "<|pad|>",
+    "<|system|>",
+    "<|user|>",
+    "<|assistant|>",
+    "<|end_turn|>",
+    "<|tool_call|>",
+    "<|end_tool_call|>",
+    "<|tool_result|>",
+    "<|end_tool_result|>",
+    "<|final|>",
+    "<|end_final|>",
+    "<|think|>",
+    "<|end_think|>",
+    "<|verify|>",
+    "<|end_verify|>"
+  ],
+  "stage_budgets": {
+    "Code": 12691,
+    "English": 15864,
+    "Math": 3173
+  },
+  "stage_merges": {
+    "Code": 12691,
+    "English": 15864,
+    "Math": 3173
+  },
+  "stage_metadata": [
+    {
+      "budget": 15864,
+      "end_token_id_exclusive": 16136,
+      "learned": 15864,
+      "rejected_overspecialized_pairs": 18015,
+      "rejected_redundant_pairs": 0,
+      "remaining_pairs": 196138,
+      "remaining_repeated_pairs": 99464,
+      "stage": "English",
+      "start_token_id": 272,
+      "stop_reason": "budget_filled",
+      "unfilled": 0
+    },
+    {
+      "budget": 3173,
+      "end_token_id_exclusive": 19309,
+      "learned": 3173,
+      "rejected_overspecialized_pairs": 5609,
+      "rejected_redundant_pairs": 0,
+      "remaining_pairs": 57739,
+      "remaining_repeated_pairs": 29346,
+      "stage": "Math",
+      "start_token_id": 16136,
+      "stop_reason": "budget_filled",
+      "unfilled": 0
+    },
+    {
+      "budget": 12691,
+      "end_token_id_exclusive": 32000,
+      "learned": 12691,
+      "rejected_overspecialized_pairs": 29284,
+      "rejected_redundant_pairs": 0,
+      "remaining_pairs": 430310,
+      "remaining_repeated_pairs": 183753,
+      "stage": "Code",
+      "start_token_id": 19309,
+      "stop_reason": "budget_filled",
+      "unfilled": 0
+    }
+  ],
+  "stage_unfilled_slots": {
+    "Code": 0,
+    "English": 0,
+    "Math": 0
+  },
+  "strict_curriculum": true,
+  "tokenizer_name": "bloat-tokenizer",
+  "vocab_size": 32000
+}
